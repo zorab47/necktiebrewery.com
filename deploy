@@ -1,0 +1,4 @@
+#!/bin/sh
+
+bundle exec middleman build &&
+  rsync -arv ./build/ cmaresh@maresh.us:/home/cmaresh/necktiebrewery.com/testing/public/

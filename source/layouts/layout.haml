@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+%html(lang="en")
+  %head
+    %meta(charset="utf-8")
+    %meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+    - if @description
+      %meta(name="description" content=@description)
+
+    %title= current_page.data.title
+
+    -# %link(rel="stylesheet" href="stylesheets/ntb.css")
+    = inline_stylesheet "ntb"
+    %link(href='http://fonts.googleapis.com/css?family=Raleway:100|Limelight' rel='stylesheet' type='text/css')
+
+    %link(rel="shortcut icon" href="images/favicon.ico")
+    %link(rel="apple-touch-icon" href="images/apple-touch-icon.png")
+    %link(rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png")
+    %link(rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png")
+  %body
+    #container.container
+      %header(role="banner")
+        %hgroup
+          %h1#site-name Necktie Brewery
+          %h2#tagline A classy group of brewers from Dallas.
+
+      .twelve.offset-by-two.columns
+        = yield
+
+    = partial :footer, :layout => false
+
+    -# %script(src="javascripts/all.js" type="text/javascript" async="async" defer="defer")
+    = inline_javascript "all"
+
+    = partial :analytics, :layout => false

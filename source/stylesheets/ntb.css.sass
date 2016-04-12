@@ -1,0 +1,133 @@
+@import "base"
+@import "skeleton"
+@import "layout"
+
+body, h1, h2, h3, h4, h5, h6
+  font-family: "Helvetica Neue", Helvetica, Arial
+
+body 
+  background-image: url(image_path("arches.png"))
+
+$border: #F0F0F0
+$text: #333
+$quiet: lighten($text, 50%)
+
+.stats
+  font-style: italic
+  color: lighten($text, 33%)
+  margin-bottom: 0
+
+.brewers
+  img
+    display: block
+    width: 100%
+    border: 1px solid $border
+
+  h4
+    text-align: center
+
+  .portrait
+    background-color: white
+    border: 1px double $border
+    padding: 9px
+    margin-bottom: 18px
+
+ul
+  list-style: square
+  padding-left: 1em
+
+a
+  text-decoration: none
+  border-bottom: 1px dashed silver
+
+  &:hover
+    border-bottom: 1px dashed $text
+
+.twitter
+  $size: 22px
+  background-image: url(/images/twitter.png)
+  background-position: bottom center
+  background-repeat: no-repeat
+  background-size: $size $size
+  opacity: 0.5
+  margin-bottom: -3px
+
+  display: inline-block
+  width: $size
+  height: $size
+
+  &, &:hover
+    border: none
+
+  &:hover
+    opacity: 1.0
+
+  span
+    display: none
+
+.container
+  margin-top: 2 * 18px
+
+section
+  margin-bottom: 2 * 18px
+
+  h2
+    font-family: "Raleway"
+    margin-bottom: 2 * 18px
+
+  h3
+    font-size: 21px
+    line-height: 30px
+
+header
+  text-align: center
+  margin-bottom: 3 * 18px
+
+  h1
+    font-family: "Limelight"
+    line-height: 1
+
+  h2
+    font-family: "Raleway"
+    font-size: 21px
+    line-height: 1
+    //line-height: 30px
+
+.quote
+  p
+    font-family: "Raleway"
+    font-size: 130%
+    line-height: 36px
+    padding: 18px
+    background-color: #F5F5F5
+
+
+.logo
+  margin-top: 2 * 18px
+
+  img
+    display: block
+    margin: 0 auto 20px
+    // Minimum size for mobile
+    width: 300px
+
+.footer
+  background: white
+  border-top: 1px solid $border
+  padding-top: 20px
+  color: lighten($text, 50%)
+  margin-bottom: 0
+  font-size: 80%
+
+  .container
+    margin-bottom: 0
+    margin-top: 0
+
+  p
+    text-align: center
+
+  a
+    color: lighten($text, 40%)
+
+    &:hover
+      color: $text

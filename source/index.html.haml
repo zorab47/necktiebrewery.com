@@ -1,0 +1,292 @@
+---
+title: Necktie Brewery
+---
+
+:ruby
+  def stats(locals)
+    partial :stats, :locals => locals
+  end
+
+  def brewer(locals)
+    partial :brewer, :locals => locals
+  end
+
+%section.row
+  .twelve.columns.brewers
+
+    .alpha.six.columns
+      = brewer :name => "Rob Goddard", :image => "rob.jpg", :twitter => "Robthefrogg"
+
+    .six.columns.omega
+      = brewer :name => "Charles Maresh", :image => "charles.jpg", :twitter => "CMaresh"
+
+  .twelve.columns.brewers
+
+    .alpha.six.columns
+      = brewer :name => "Phil Whittle", :image => "phil.jpg", :twitter => "PCWhittle"
+
+    .six.columns.omega
+      = brewer :name => "Craig Marshall", :image => "craig.jpg", :twitter => "CtotheMarshall"
+
+%section.row.news
+  .twelve.columns
+    %h2 Updates
+
+  .twelve.columns
+    .row
+      .alpha.six.columns
+        :markdown
+
+          ### Brew Riot 2016
+
+          All new brews this year. We'll see you in May!
+
+  .twelve.columns
+    .row
+      .alpha.six.columns
+        :markdown
+
+          ### Brew Riot 2014
+
+          We're bringing back a few improved favorites and two new brews to
+          this year's Brew Riot. Our crew will be continuing our persuit to
+          give away every drop of our tasty home brews.
+
+          See you at Brew Riot 2014!
+
+    .row
+      .alpha.six.columns
+        :markdown
+
+          ### Brew Riot 2013
+
+          We're entering four new beers at this year's Brew Riot. See you
+          on May 19.
+
+          Remember that we'll be the guys with ties.
+
+      .omega.six.columns
+        :markdown
+
+          ### Third Place at [Brew Riot][br] 2012
+
+          Our Half-Windsor Porter won [third place][results] in the
+          ales category, which competed with over 90 entries!
+
+          We had a wonderful time in the chaos of Brew Riot. We
+          worked fast handing out beer samples, chatting with the
+          rioters and sneaking breaks to enjoy other great beers.
+
+          We'll definitely be back next year.
+
+          [Check out our Brew Riot photos][photos].
+
+          [br]:http://brewriot.com
+          [results]:http://brewriot.com/2012/05/23/congratulations-to-the-winners
+          [photos]:http://pics.maresh.us/brewriot-2012
+
+%section.row.brews
+  .twelve.columns
+    %h2 Our Brews
+  .twelve.columns
+
+    .row
+      .alpha.six.columns
+        :markdown
+          ### Novotny Orange Wheat
+
+          A light, sweet wheat beer with strong orange flavors from fresh
+          orange zest and homegrown, crushed coriander.
+
+          An excellent beer to enjoy on a hot summer afternoon.
+
+        = stats :og => 1.050, :fg => 1.012, :abv => 5.6
+
+      .omega.six.columns
+        :markdown
+          ### TBD
+
+          ...
+
+%section.row.brews
+  .twelve.columns
+    %h2 Previous Brews: 2014
+  .twelve.columns
+
+    .row
+      .alpha.six.columns
+        :markdown
+          ### Seven-Fold Rosemary Saison
+
+          A strong beer at 7.3%, our Seven-Fold Saison kicks it up a notch with
+          a smooth hit of rosemary, perfect for summer. Keeping inline with
+          the Saison's upbringings, it has notes of pepper, an extra helping of
+          honey, and citrusy flavors.
+
+        = stats :og => 1.062, :fg => 1.011, :abv => 7.34
+
+      .omega.six.columns
+        :markdown
+          ### Ascot ESB
+
+          An elegant beer, for a more civilized age.  Don’t let the “bitter”
+          in the name fool you.  Unlike the hyper-hopped Pale Ales of America,
+          the Ascot ESB is a true, balanced English strong bitter.  A full,
+          malty flavor from the Maris Otter base grains, and a wonderful mix
+          of Target, UK Challenger and UK East Kent Golding hops.  This beer
+          is meant for quaffing, so step up to the rail and give it a try.
+
+        = stats :og => 1.056, :fg => 1.015, :abv => 5.38
+
+    .row
+      .alpha.six.columns
+        :markdown
+          ### Jabot Vienna Lager
+
+          An extra light, but full-bodied lager best served cold.
+
+      .omega.six.columns
+        :markdown
+          ### Atlantic Maple Brown
+
+          Amber in color, this brown ale features maple syrup.
+
+%section.row.brews
+  .twelve.columns
+    %h2 Previous Brews: 2013
+  .twelve.columns
+
+    .row
+      .alpha.six.columns
+        :markdown
+          ### Ascot Extra Special Bitter
+
+          An elegant beer, for a more civilized age.  Don’t let the “bitter”
+          in the name fool you.  Unlike the hyper-hopped Pale Ales of America,
+          the Ascot ESB is a true, balanced English strong bitter.  A full,
+          malty flavor from the Maris Otter base grains, and a wonderful mix
+          of Target, UK Challenger and UK East Kent Golding hops.  This beer
+          is meant for quaffing, so step up to the rail and give it a try.
+
+        = stats :og => 1.056, :fg => 1.015, :abv => 5.38
+
+      .omega.six.columns
+        :markdown
+          ### Black Tie Porter
+
+          Improving on the Half-Windsor Chocolate Porter, this brew keeps the
+          rich cocoa flavors and adds vanilla to enhance the sweetness.
+
+        = stats :og => 1.064, :fg => 1.020, :abv => 6.4
+
+    .row
+      .alpha.six.columns
+        :markdown
+          ### Bolo Pale Ale
+
+          An exceptionally clean and flavorful pale ale.
+
+        = stats :og => 1.05, :fg => 1.009, :abv => 6.0
+
+      .omega.six.columns
+        :markdown
+          ### Shelby Wheat
+
+          A citrusy American style wheat beer with the sweetness of vanilla
+          before a smooth finish.
+
+        = stats :og => 1.054, :fg => 1.014, :abv => 5.86
+
+    .row
+      .alpha.six.columns
+        :markdown
+          ### Eldridge Red
+
+          A strong red with full, malty characteristics.
+
+        = stats :og => 1.054, :fg => 1.013, :abv => 6.0
+
+      .omega.six.columns
+
+%section.row.brews
+  .twelve.columns
+    %h2 Previous Brews: 2012
+  .twelve.columns
+
+    .row
+      .alpha.six.columns
+        :markdown
+          ### Atlantic Maple Brown
+
+          Amber in color, this brown ale features maple syrup.
+
+
+      .omega.six.columns
+        :markdown
+          ### Four-in-Hand Milk Stout
+
+          A sweet stout that will be an instant classic.
+
+    .row
+      .alpha.six.columns
+        :markdown
+          ### Clip-on Cali IPA
+
+          This IPA packs a punch at 8.5% ABV with hints of grapefruit
+          and carefree, bitter flavors. It won't last long.
+
+        = stats :og => 1.076, :fg => 1.012, :abv => 8.5
+
+      .omega.six.columns
+        :markdown
+          ### Collegiate Common
+
+          Malty flavor with light citrus notes, this beer is smooth and highly
+          drinkable. Perfect for relaxing on a hot Texas weekend.
+
+        = stats :og => 1.054, :fg => 1.014, :abv => 5.25
+
+    .row
+      .alpha.six.columns
+        :markdown
+          ### Half-Windsor Porter
+
+          A smooth, chocolate porter made with real cocoa powder. This porter was first
+          brewed early last autumn and later refined with more chocolate flavors.
+
+        = stats :og => 1.060, :fg => 1.021, :abv => 5.73
+
+      .omega.six.columns
+
+-#
+  %section.row.apperances
+    .twelve.columns
+      %h2 Appearances
+    .six.columns
+      :markdown
+
+        ### [BrewRiot][br]
+
+        Sunday, May 20, 2012 @ 4pm
+
+        Meet the group and sample their beers at [BrewRiot][br], the upcoming
+        home brew festival in Oak Cliff.
+
+        [br]:http://brewriot.com
+
+
+
+-#
+  %hr
+
+  :markdown
+    If you're lucky you might catch one of the brewers without his tie; that's when
+    you know he is hard at work crafting another elegant beer.
+
+  .row
+    :markdown
+      ## Our Brewers
+
+      * Charles Maresh
+      * Craig Marshall
+      * Rob Goddard
